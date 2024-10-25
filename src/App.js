@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import icon from "./assets/Icon.png";
+import Gridview from "./Gridview";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main">
+        <div className="header">
+          <div className="heading">
+            <h1>Beginnen Sie Ihre Verkaufsreise 👋</h1>
+            <p>
+              Entdecken Sie mühelos jede Facette Ihres Verkaufsmandatsvertrags.
+            </p>
+          </div>
+          <div className="reload">
+            <img src={icon} alt="reload" />
+            <p>Reload</p>
+          </div>
+        </div>
+        <Gridview />
+      </div>
     </div>
   );
 }
